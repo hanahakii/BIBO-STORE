@@ -26,26 +26,6 @@
    
 </table>
 <h3 class="text-primary text-center" colspan="5">car List</h3>
-    
-{{!-- <div class="container text-center">
-    <div class="card-group">
-            {{#each car}}
-            <div class="row">
-            <div class="card col-md-3 m-3">
-            <img src="{{image}}" style="width:50%">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <h4 class="card-title">{{name}}</h4>
-                <p class="card-text">{{price}}</p>
-                <a href="/car/detail/{{_id}}" class="btn btn-primary">See Profile</a>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-</div>
-{{/each}}
-</div>
-</div> --}}
 
 <div class="container text-center">
     <div class="card-group">
@@ -58,11 +38,12 @@
                 <div class="col-md-8">
                 <div class="card-body">
                     <h4 class="card-title text-success">{{name}}</h4>
-                    <p class="card-text text-danger">{{price}}</p>
-                    <a href="/car/detail/{{_id}}" class="btn btn-primary">See Profile</a>
-                    <a class="btn btn-warning" href="/car/edit/{{_id}}">EDIT</a>
-                    <a class="btn btn-danger" href="/car/delete/{{_id}} "
-                        onclick="return confirm('Are you sure to delete all ?')">DELETE</a>
+                    <p class="card-text text-danger">${{price}}</p>
+
+                    <a href="/car/detail/{{_id}}" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVX9kiXamDGsxQe1UNYcYP_6m1BpHUc4FHA&usqp=CAU"width="50" height="50"></a>
+                    <a  href="/car/edit/{{_id}}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33MP_ljgivJXWb_R42jEMBM4xWxP8vJN1FAwqtaK-wQ&s" width="50" height="50"></a>
+                    <a  href="/car/delete/{{_id}}"
+                        onclick="return confirm('Are you sure to delete all ?')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdDKQMFDwfhQ7MEvV5x4x6iU-booAcq54KQ&usqp=CAU"width="50" height="50"></a>
                 </div>
                 </div>
             
