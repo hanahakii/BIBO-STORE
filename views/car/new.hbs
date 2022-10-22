@@ -11,32 +11,21 @@
             <input class="form-control" type="text" name="description" required minlength="3" maxlength="200">
         </div>
 
-        <div class="form-group mt-3">
+        {{!-- <div class="form-group mt-3">
             <label class="text-success h6">car size</label>
             <input class="form-control" type="text" name="size" required minlength="1" maxlength="3">
-        </div>
+        </div> --}}
 
-        {{!-- <div class="form-group mt-2">
+        <div class="form-group mt-2">
             <label class="text-success h6">car size</label>
             <select name="size" class="form-control">
                 <option value="">Select a size</option>
-                {{#equal car.size 1}}
                 <option value="1" selected>S</option>
                 <option value="2">M</option>
                 <option value="3">L</option>
                 {{/equal}}
-                {{#equal car.size 2}}
-                <option value="1">S</option>
-                <option value="2" selected>M</option>
-                <option value="3">L</option>
-                {{/equal}}
-                {{#equal car.size 3}}
-                <option value="1">S</option>
-                <option value="2">M</option>
-                <option value="3" selected>L</option>
-                {{/equal}}
-            </select>
-        </div> --}}
+               
+        </div>
 
         <div class="form-group mt-3">
             <label class="text-success h6">car Image</label>
